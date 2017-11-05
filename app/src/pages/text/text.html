@@ -1,0 +1,26 @@
+<!--
+  Generated template for the TextPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>文字表情</ion-title>
+  </ion-navbar>
+
+
+</ion-header>
+
+<ion-content padding>
+  <ion-card class="ion-card">
+    <img class="ion-card-img" [src]="defaultImg" (press)="onHold()"/>
+  </ion-card>
+  <button class="button" ion-button color="secondary" round small (click)="getResult()">生成</button>
+  <ion-item class="ion-item">
+    <ion-label color="primary" stacked>提示：输入文字匹配出您的专属表情包！</ion-label>
+    <ion-input type="text" [(ngModel)]="myText"></ion-input>
+  </ion-item>
+
+</ion-content>

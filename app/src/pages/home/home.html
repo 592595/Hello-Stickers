@@ -1,0 +1,41 @@
+<ion-content no-padding scroll="false">
+
+  <div class="top" scroll="false">
+    <div class="banner">
+      <p class="title">Hello Stickers</p>
+      <p class="content">Give you a different way of communication </p>
+
+      <ion-fab right middle class="fabs">
+        <button ion-fab color="secondary"><ion-icon name="add"></ion-icon></button>
+        <ion-fab-list side="top">
+          <button ion-fab color="light" (click)="navToVideo()"><ion-icon name="outlet"></ion-icon></button>
+        </ion-fab-list>
+        <ion-fab-list side="bottom">
+          <button ion-fab color="light" (click)="navToText()"><ion-icon name="create"></ion-icon></button>
+        </ion-fab-list>
+        <ion-fab-list side="left">
+          <button ion-fab color="light" (click)="navToAudio()"><ion-icon name="pulse"></ion-icon></button>
+        </ion-fab-list>
+      </ion-fab>
+    </div>
+  </div>
+
+
+  <div id="container">
+    <div class="box">
+      <div class="box_img">
+        <img [src]="pic" *ngFor="let pic of picList">
+
+        <!--<img src="assets/imgs/forepart.jpg">-->
+        <!--<img src="assets/imgs/initialize.jpg">-->
+        <!--<img src="assets/imgs/default.jpg">-->
+        <!--<img src="assets/imgs/forepart.jpg">-->
+        <!--<img src="assets/imgs/initialize.jpg">-->
+
+        <!--<img src="assets/imgs/initialize.jpg">-->
+      </div>
+    </div>
+  </div>
+
+</ion-content>
+

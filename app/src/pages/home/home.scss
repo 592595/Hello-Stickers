@@ -1,0 +1,58 @@
+page-home {
+  .banner{
+    background-color: #13C0E8;
+    width: 100%;
+    height: 80%;
+  }
+  p{
+    color: #fff;
+  }
+  .title{
+    margin: 0;
+    padding-top: 8rem;
+    font-size: 3rem;
+    text-align: center;
+    font-family: "AvantGarde Md BT";
+  }
+  .content{
+    margin: 0;
+    padding-top: 1rem;
+    font-size: 2rem;
+    text-align: center;
+    font-family: "AvantGarde Md BT";
+  }
+  .fabs{
+    position: absolute;
+    top: 270px;
+  }
+  .top{
+    height:340px;
+  }
+  ion-content {
+    #container {
+      position: absolute;
+      top: 300px!important;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      .box {
+        padding: 5px;
+        .box_img {
+          background-color: #f2f2f2;
+          padding: 10px 3px;
+          border: 1px solid #cccccc;
+          box-shadow: 0 0 5px #ccc;
+          border-radius: 5px;
+          img {
+            margin: 2px;
+            border: 1px solid #cccccc;
+            box-shadow: 0 0 5px #ccc;
+            border-radius: 5px;
+            width: 45%!important;
+            height: auto;
+          }
+        }
+      }
+    }
+  }
+}
